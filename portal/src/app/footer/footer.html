@@ -1,5 +1,53 @@
-<footer class="bg-gray-800 text-gray-300 py-8 fixed bottom-0 left-0 w-full">
-    <div class="container mx-auto text-center ">
-        <p>&copy; 2026 SENAi News. Todos os direitos reservados.</p>
+<footer class="bg-slate-900 border-t border-white/10 pt-16 pb-8 px-6 mt-20">
+    <div class="max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
+            
+            <!-- Coluna 1: Branding Nação -->
+            <div class="space-y-6">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-cyan-500 rounded-xl flex items-center justify-center shadow-[0_0_20px_rgba(6,182,212,0.3)]">
+                        <span class="font-black text-slate-900 italic">A</span>
+                    </div>
+                    <span class="text-2xl font-black tracking-tighter text-white uppercase italic">Arquipélaga<span class="text-cyan-500">.gov</span></span>
+                </div>
+                <p class="text-slate-400 text-sm leading-relaxed italic">
+                    Portal oficial de gestão territorial e emergência climática. Protegendo nosso povo e nossa cultura através das marés.
+                </p>
+            </div>
+
+            <!-- Coluna 2: Links Rápidos (Navegação Interna) -->
+            <div class="flex flex-col space-y-4">
+                <h4 class="text-cyan-500 font-black uppercase text-xs tracking-[0.2em] mb-2">Acesso Rápido</h4>
+                <a routerLink="/" class="text-slate-300 hover:text-white transition-colors text-sm font-medium w-fit">Início / Home</a>
+                <a routerLink="/perfil" class="text-slate-300 hover:text-white transition-colors text-sm font-medium w-fit">Relatório de Perfil</a>
+                <a routerLink="/contato" class="text-slate-300 hover:text-white transition-colors text-sm font-medium w-fit">Suporte ao Cidadão</a>
+            </div>
+
+            <!-- Coluna 3: Créditos Técnicos (SENAI) -->
+            <div class="space-y-4">
+                <h4 class="text-cyan-500 font-black uppercase text-xs tracking-[0.2em] mb-2">Desenvolvimento</h4>
+                <div class="bg-white/5 p-4 rounded-2xl border border-white/10">
+                    <p class="text-white font-bold text-sm mb-1 uppercase tracking-tight">Equipe de Engenharia:</p>
+                    <div class="text-slate-400 text-xs space-y-1">
+                        <p>• Leonardo Ortega</p>
+                        <p>• Isaac</p>
+                        <p>• Jose</p>
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-white/10 flex items-center gap-2">
+                        <span class="text-[10px] text-slate-500 uppercase font-black">Powered by</span>
+                        <span class="text-xs text-white font-bold tracking-tighter">SENAI News 2026</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Barra Inferior de Direitos -->
+        <div class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] font-bold text-slate-500 uppercase tracking-[0.2em]">
+            <p>&copy; 2026 Arquipélaga Nacional - Todos os Direitos Reservados</p>
+            <div class="flex gap-6">
+                <span class="hover:text-cyan-500 cursor-pointer transition-colors">Termos de Uso</span>
+                <span class="hover:text-cyan-500 cursor-pointer transition-colors">Privacidade de Dados</span>
+            </div>
+        </div>
     </div>
 </footer>

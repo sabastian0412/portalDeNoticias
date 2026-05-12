@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Internacional } from './internacional';
+import { Internacional } from './perfil';
 
 describe('Internacional', () => {
   let component: Internacional;
