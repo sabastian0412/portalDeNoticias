@@ -1,26 +1,43 @@
-<header class="bg-slate-900 text-white shadow-2xl sticky top-0 z-50">
-  <nav class="container mx-auto px-6 py-4 flex flex-col md:flex-row justify-between items-center">
+
+<header class="bg-slate-950/80 backdrop-blur-xl sticky top-0 z-50 border-b border-white/5 shadow-[0_20px_50px_-15px_rgba(0,0,0,0.7)]">
+  <nav class="max-w-7xl mx-auto px-8 h-24 flex items-center justify-between">
     
-    <div class="mb-4 md:mb-0">
-      <a routerLink="/" class="text-2xl font-extrabold tracking-tighter bg-gradient-to-r from-blue-400 to-indigo-300 bg-clip-text text-transparent hover:opacity-80 transition-opacity">
-      Arquipelago
+    <div class="flex items-center gap-4 group">
+      <div class="w-11 h-11 bg-blue-600 rounded-2xl flex items-center justify-center shadow-[0_0_25px_rgba(37,99,235,0.4)] group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
+        <span class="font-black text-white italic text-xl">A</span>
+      </div>
+      <a routerLink="/" class="text-2xl font-black tracking-tighter text-white uppercase italic leading-none">
+        Arquipelago
+        <span class="block text-[9px] tracking-[0.5em] text-blue-400 font-bold mt-1">Soberania Insular</span>
       </a>
     </div>
 
-    <ul class="flex flex-wrap justify-center gap-6 text-sm uppercase tracking-widest font-semibold">
-      <li>
-        <a routerLink="home" class="border-b-2 border-transparent hover:border-blue-400 hover:text-blue-300 transition-all duration-300 pb-1">home</a>
-      </li>
-      <li>
-        <a routerLink="contato" class="border-b-2 border-transparent hover:border-blue-400 hover:text-blue-300 transition-all duration-300 pb-1">contato</a>
-      </li>
-      <li>
-        <a routerLink="perfil" class="border-b-2 border-transparent hover:border-blue-400 hover:text-blue-300 transition-all duration-300 pb-1">perfil</a>
-      </li>
-      <li>
-        <a routerLink="quem-somos" class="bg-blue-600 hover:bg-blue-500 px-4 py-2 rounded-full transition-colors duration-300">Quem somos</a>
-      </li>
-    </ul>
+    <div class="flex items-center gap-12">
+      <ul class="flex items-center gap-10">
+        <li>
+          <a routerLink="home" class="text-[11px] font-black uppercase tracking-[0.25em] text-slate-400 hover:text-white hover:tracking-[0.35em] transition-all duration-300 relative group">
+            Home
+            <span class="absolute -bottom-2 left-0 w-0 h-[2px] bg-blue-500 group-hover:w-full transition-all duration-300"></span>
+          </a>
+        </li>
+        <li>
+          <a routerLink="contato" class="text-[11px] font-black uppercase tracking-[0.25em] text-slate-400 hover:text-white hover:tracking-[0.35em] transition-all duration-300 relative group">
+            Contato
+            <span class="absolute -bottom-2 left-0 w-0 h-[2px] bg-blue-500 group-hover:w-full transition-all duration-300"></span>
+          </a>
+        </li>
+        <li>
+          <a routerLink="perfil" class="text-[11px] font-black uppercase tracking-[0.25em] text-slate-400 hover:text-white hover:tracking-[0.35em] transition-all duration-300 relative group">
+            Perfil
+            <span class="absolute -bottom-2 left-0 w-0 h-[2px] bg-blue-500 group-hover:w-full transition-all duration-300"></span>
+          </a>
+        </li>
+      </ul>
+
+      <a routerLink="quem-somos" class="relative inline-flex items-center justify-center px-8 py-3.5 overflow-hidden font-black uppercase tracking-widest text-xs text-white transition-all duration-500 bg-blue-600 rounded-full hover:bg-blue-500 group shadow-[0_10px_20px_-5px_rgba(37,99,235,0.5)] active:scale-95 italic">
+        <span class="relative">Quem somos</span>
+      </a>
+    </div>
     
   </nav>
 </header>
